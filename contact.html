@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your portfolio, including key skills, projects, and what sets you apart.">
+    <meta name="author" content="Usama Elareeny">
+    <meta name="keywords" content="portfolio, web developer, software engineer, front-end, back-end, full-stack, projects, skills">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Usama Elareeny's Personal Portfolio">
+    <meta property="og:title" content="Usama Elareeny">
+    <meta property="og:description" content="A brief description of your portfolio.">
+    <meta property="og:image" content="Media/Images/CircularWebsiteLogo.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta http-equiv="content-language" content="en">
+    <link rel="apple-touch-icon" sizes="180x180" href="Media/Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Media/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Media/Images/favicon-16x16.png">
+    <link rel="manifest" href="Media/Images/site.webmanifest">
+    <link rel="mask-icon" href="Media/Images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Normalizing CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Tailwind CSS Output File -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Usama Elareeny | Contact</title>
+</head>
+
+<body class="bg-beige font-sans font-light min-h-screen">
+    <!-- Container -->
+    <div class="container p-4 sm:py-14 sm:px-8 xl:py-20">
+        <!-- Header -->
+        <header class="font-acorn mb-10 sm:mb-14 xl:mb-20 flex items-center flex-col sm:flex-row gap-9 sm:gap-14 mx-auto max-w-5xl">
+            <!-- Profile Picture -->
+            <div class="w-[85px] sm:w-[150px] shrink-0">
+                <a href="#">
+                    <img class="rounded-full" width="150" height="150" src="Media/Images/PersonalImageTransparent.png" alt="Usama's Picture">
+                </a>
+            </div>
+            <!-- Name & Links -->
+            <div>
+                <a href="index.html" 
+                class=
+                "text-h3 tracking-tighter font-bold text-green500 flex flex-col items-center sm:items-start after:w-12 after:h-[6px] after:max-w-6 after:sm:max-w-12 after:mt-2 after:inline-block after:rounded-full after:bg-green500 ">
+                    Usama Elareeny
+                </a>
+                <nav class="mt-4 sm:mt-6 flex gap-4 sm:gap-8">
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="projects.html">
+                        Projects
+                    </a>
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="highschool.html">
+                        High School Highlights
+                    </a>
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="articles.html">
+                        Articles
+                    </a>
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="contact.html">
+                        Contact
+                    </a>                            
+                </nav>
+            </div>
+        </header>
+        <section class="mx-auto max-w-2xl">
+            <div class="font-acorn mb-10 sm:mb-14 mx-auto max-w-5xl pb-8 sm:pb-12 text-center">
+                <h1 class="text-h2 font-black text-green500">Contact Me</h1>
+                <p class="text-body">Leave a message and I'll be in touch shortly.</p>
+            </div>
+            <div>
+                <form class="text-body font-gt" action="https://api.web3forms.com/submit" method="POST" data-recaptcha-form="contact">
+                    <div class="grid grid-cols-1 gap-5 sm:gap-7 sm:grid-cols-6">
+                        <div class="flex gap-5 sm:gap-7 col-span-full flex-col sm:flex-row">
+                            <div class="w-full">
+                                <label for="name" class="block pb-3 font-medium">
+                                    Name <span class="text-red-600">*</span>
+                                </label>
+                                <input id="name" class="block w-full rounded-lg bg-white30 leading-6 min-h-12 focus:outline-green600 px-3 py-2" name="name" type="text" value="" required="">
+                            </div>
+                            <div class="w-full">
+                                <label for="email" class="block pb-3 font-medium">
+                                    Email <span class="text-red-600">*</span>
+                                </label>
+                                <input id="email" class="block w-full rounded-lg bg-white30 leading-6 min-h-12 focus:outline-green600 px-3 py-2" name="email" type="email" value="" required="">
+                            </div>
+                        </div>
+                        <div class="col-span-full">
+                            <label for="subject" class="block pb-3 font-medium">
+                                Subject <span class="text-red-600">*</span>
+                            </label>
+                            <input id="subject" class="block w-full rounded-lg bg-white30 leading-6 min-h-12 focus:outline-green600 px-3 py-2" name="subject" type="text" value="" required="">
+                        </div>
+                        <div class="col-span-full">
+                            <label for="message" class="block pb-3 font-medium">
+                                Message <span class="text-red-600">*</span>
+                            </label>
+                            <textarea id="message" class="font-gt block w-full rounded-lg bg-white30 min-h-52 focus:outline-green600 px-3 py-2" name="message" required=""></textarea>
+                        </div>
+                        <div class="col-span-full">
+                            <!-- <div class="hidden">
+                                <input name="subject_2" type="text">
+                            </div> -->
+                            <button class="mt-4 bg-green500 text-white rounded-2xl font-semibod p-2 px-6 inline-block duration-300 hover:bg-green600">Send Message</button>
+                        </div>
+                    </div>
+                    <input type="hidden" name="access_key" value="8b80d596-8933-4217-b753-c44f5e0fee6d">
+                </form>
+            </div>
+        </section>         
+        <footer class="font-gt text-green600 mt-14 xl:mt-20 pt-8 text-link sm:pt-10 text-center border-t-[1px] border-green600 mx-auto max-w-5xl"> &copy; 2024 Usama Elareeny. All rights reserved. </footer>
+    </div>
+</body>
+</html>

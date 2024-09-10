@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your portfolio, including key skills, projects, and what sets you apart.">
+    <meta name="author" content="Usama Elareeny">
+    <meta name="keywords" content="portfolio, web developer, software engineer, front-end, back-end, full-stack, projects, skills">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Usama Elareeny's Personal Portfolio">
+    <meta property="og:description" content="A brief description of your portfolio.">
+    <meta property="og:image" content="Media/Images/CircularWebsiteLogo.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta http-equiv="content-language" content="en">
+    <link rel="apple-touch-icon" sizes="180x180" href="Media/Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Media/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Media/Images/favicon-16x16.png">
+    <link rel="manifest" href="Media/Images/site.webmanifest">
+    <link rel="mask-icon" href="Media/Images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Normalizing CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Tailwind CSS Output File -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Usama Elareeny | Project</title>
+</head>
+
+<body class="bg-beige font-sans font-light min-h-screen">
+    <!-- Container -->
+    <div class="container p-4 sm:py-14 sm:px-8 xl:py-20">
+        <!-- Header -->
+        <header class="font-acorn mb-10 sm:mb-14 xl:mb-20 flex items-center flex-col sm:flex-row gap-9 sm:gap-14 mx-auto max-w-5xl">
+            <!-- Profile Picture -->
+            <div class="w-[85px] sm:w-[150px] shrink-0">
+                <a href="#">
+                    <img class="rounded-full" width="150" height="150" src="Media/Images/PersonalImageTransparent.png" alt="Usama's Picture">
+                </a>
+            </div>
+            <!-- Name & Links -->
+            <div>
+                <a href="index.html" 
+                class=
+                "text-h3 tracking-tighter font-bold text-green500 flex flex-col items-center sm:items-start after:w-12 after:h-[6px] after:max-w-6 after:sm:max-w-12 after:mt-2 after:inline-block after:rounded-full after:bg-green500 ">
+                    Usama Elareeny
+                </a>
+                <nav class="mt-4 sm:mt-6 flex gap-4 sm:gap-8">
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="projects.html">
+                        Projects
+                    </a>
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="highschool.html">
+                        High School Highlights
+                    </a>
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="articles.html">
+                        Articles
+                    </a>
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="contact.html">
+                        Contact
+                    </a>                            
+                </nav>
+            </div>
+        </header>
+        <div class="font-acorn mb-12 xl:mb-20 mx-auto max-w-5xl">
+            <h1 class="text-h2 font-black text-green500">Projects</h1>
+            <p class="text-body"> Some of the projects I've been working on lately.</p>
+        </div>
+        
+        <section class="mx-auto max-w-7xl md:[&>*:nth-child(even)]:flex-row-reverse">
+            <!-- WeatherApp Project -->
+            <div class="mb-14 xl:mb-20 flex flex-col md:flex-row items-center gap-8 md:gap-14">
+                <figure class="md:w-[58.75%] md:shrink-0">
+                    <a href="https://usamaelareeny.github.io/WeatherApp/"
+                        target="_blank"
+                        class="relative group transition-opacity duration-1000">
+                        <!-- Original Image -->
+                        <img src="Media/Images/Projects/WeatherApp/WeatherApp Dark.png"
+                            alt="WeatherApp Snapshot"
+                            width="752"
+                            height="833"
+                            class="rounded-2xl shadow-xl">
+                        <!-- Hover Image -->
+                        <img src="Media/Images/Projects/WeatherApp/WeatherApp Light.png"
+                            alt="WeatherApp Snapshot Hover"
+                            class="rounded-2xl shadow-xl absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                    </a>
+                </figure>
+                <div>
+                    <div class="mb-6">
+                        <h2 class="font-acorn text-h3">
+                            <a class="transition-opacity duration-200 hover:opacity-50" target="_blank" href="https://usamaelareeny.github.io/WeatherApp/">
+                                WeatherApp
+                            </a>
+                        </h2>
+                    </div>
+                    <p class="font-gt text-body mb-6">
+                        Web application providing real-time weather updates, forecasts, and conditions for any location.
+                    </p>
+                    <ul class="font-gt text-link text-green700 flex flex-col gap-2">
+                        <li class="before:content-['>'] duration-300 hover:text-green600">  Web App Design </li>
+                        <li class="before:content-['>'] duration-300 hover:text-green600">  UI/UX </li>
+                        <li class="before:content-['>'] duration-300 hover:text-green600">  Frontend Development</li>
+                        <li class="before:content-['>'] duration-300 hover:text-green600">  API Integration</li>
+                        <li class="before:content-['>'] duration-300 hover:text-green600">  Performance Optimization</li>
+                    </ul>
+                    <a class="mt-2 sm:mt-4 md:mt-8 bg-green500 text-white text-link rounded-full font-bold p-2 sm:p-3 md:p-4 px-4 sm:px-5 md:px-6 inline-block duration-300 hover:bg-green600"  target="_blank" href="https://github.com/UsamaElareeny/WeatherApp">View Details...</a>
+                </div>
+            </div>
+            <!-- AcademiaEase Project -->
+            <div class="mb-14 xl:mb-20 flex flex-col md:flex-row items-center gap-8 md:gap-14">
+                <figure class="md:w-[58.75%] md:shrink-0">
+                    <a href="https://github.com/UsamaElareeny/AcademiaEase-A-Complete-Student-Management-System"
+                        target="_blank"
+                        class="relative group transition-opacity duration-1000">
+                        <!-- Original Image -->
+                        <img src="Media/Images/Projects/AcademiaEase/AcademiaEase1.jpg"
+                            alt="WeatherApp Snapshot"
+                            width="752"
+                            height="833"
+                            class="rounded-2xl shadow-xl">
+                        <!-- Hover Image -->
+                        <img src="Media/Images/Projects/AcademiaEase/AcademiaEase2.jpg"
+                            alt="WeatherApp Snapshot Hover"
+                            class="rounded-2xl shadow-xl absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                    </a>
+                </figure>
+                <div>
+                    <div class="mb-6">
+                        <h2 class="font-acorn text-h3">
+                            <a class="transition-opacity duration-200 hover:opacity-50" target="_blank" href="https://github.com/UsamaElareeny/AcademiaEase-A-Complete-Student-Management-System">
+                                AcademiaEase: A Complete Student Management System
+                            </a>
+                        </h2>
+                    </div>
+                    <p class="font-gt text-body mb-6">
+                        Innovative management system designed to streamline the administration of students, courses, and professors within academic institutions.
+                    </p>
+                    <ul class="font-gt text-link text-green700 flex flex-col gap-2">
+                        <li class="before:content-['>'] duration-300 hover:text-green600"> Desktop Application Development</li>
+                        <li class="before:content-['>'] duration-300 hover:text-green600"> User Authentication and Role Management</li>
+                        <li class="before:content-['>'] duration-300 hover:text-green600"> Interactive Dashboard and Reporting</li>
+                        <li class="before:content-['>'] duration-300 hover:text-green600"> Graphical User Interface (GUI)</li>
+                    </ul>
+                    <a class="mt-2 sm:mt-4 md:mt-8 bg-green500 text-white text-link rounded-full font-bold p-2 sm:p-3 md:p-4 px-4 sm:px-5 md:px-6 inline-block duration-300 hover:bg-green600" target="_blank" href="https://github.com/UsamaElareeny/AcademiaEase-A-Complete-Student-Management-System">View Details...</a>
+                </div>
+            </div>
+        </section>
+        <footer class="font-gt text-green600 mt-14 xl:mt-20 pt-8 text-sm sm:text-base sm:pt-10 text-center border-t-[1px] border-green600 mx-auto max-w-5xl"> &copy; 2024 Usama Elareeny. All rights reserved. </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+  "build": "npx tailwindcss -i ./CSS/input.css -o ./CSS/main.css",
+  "watch": "npx tailwindcss -i ./CSS/input.css -o ./CSS/main.css --watch"
+},
+  "engines": {
+    "node": "20.x"
+  },
+  "keywords": [],
+  "author": "Usama Elareeny",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}

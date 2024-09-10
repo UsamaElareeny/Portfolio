@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'acorn';
+    src: url('/Font/acorn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gt';
+    src: url('/Font/gt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+::selection {
+    background: hsla(172, 95%, 18%, 1);
+    color: white;
+}

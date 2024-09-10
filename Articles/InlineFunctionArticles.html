@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your portfolio, including key skills, projects, and what sets you apart.">
+    <meta name="author" content="Usama Elareeny">
+    <meta name="keywords" content="portfolio, web developer, software engineer, front-end, back-end, full-stack, projects, skills">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Usama Elareeny's Personal Portfolio">
+    <meta property="og:description" content="A brief description of your portfolio.">
+    <meta property="og:image" content="/Media/Images/CircularWebsiteLogo.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta http-equiv="content-language" content="en">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/Media/Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Media/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Media/Images/favicon-16x16.png">
+    <link rel="manifest" href="/Media/Images/site.webmanifest">
+    <link rel="mask-icon" href="/Media/Images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Normalizing CSS -->
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    
+    <!-- Tailwind CSS Output File -->
+    <link rel="stylesheet" href="/CSS/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+
+    <title>Usama Elareeny | Inline Functions</title>
+</head>
+
+<body class="bg-beige font-sans font-light min-h-screen">
+    <!-- Container -->
+    <div class="container p-4 sm:py-14 sm:px-8 xl:py-20">
+        <!-- Header -->
+        <header class="font-acorn mb-10 sm:mb-14 xl:mb-20 flex items-center flex-col sm:flex-row gap-9 sm:gap-14 mx-auto max-w-5xl">
+            <!-- Profile Picture -->
+            <div class="w-[85px] sm:w-[150px] shrink-0">
+                <a href="#">
+                    <img class="rounded-full" width="150" height="150" src="/Media/Images/PersonalImageTransparent.png" alt="Usama's Picture">
+                </a>
+            </div>
+            <!-- Name & Links -->
+            <div>
+                <a href="/index.html" 
+                class=
+                "text-h3 tracking-tighter font-bold text-green500 flex flex-col items-center sm:items-start after:w-12 after:h-[6px] after:max-w-6 after:sm:max-w-12 after:mt-2 after:inline-block after:rounded-full after:bg-green500 ">
+                    Usama Elareeny
+                </a>
+                <nav class="mt-4 sm:mt-6 flex gap-4 sm:gap-8">
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="/projects.html">
+                        Projects
+                    </a>
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="/highschool.html">
+                        High School Highlights
+                    </a>
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="/articles.html">
+                        Articles
+                    </a>
+                    <a class="text-link uppercase font-medium tracking-wider text-green600 text-center duration-200 hover:text-green500" href="/contact.html">
+                        Contact
+                    </a>                            
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <section class="mx-auto max-w-5xl">
+            <article class="font-gt mb-8 pb-8 sm:mb-12 sm:pb-12 border-b-[1px] border-green600">
+                <h3 class="mb-4 sm:mb-5 font-light text-h3">
+                    <a class="hover:opacity-50 transition-opacity duration-200" href="Articles/InlineFunctionArticles.html"> Inline Functions in C++ </a>
+                </h3>
+                <p class="mb-4 sm:mb-5 text-link flex items-center gap-3 sm:gap-6">
+                    <span class="border border-green800 text-green800 rounded-full px-2 opacity-100 hover:opacity-50 transition-opacity duration-200"> C++ </span>
+                    <span class="text-green900"> 10 August, 2024 </span>
+                    <span class="text-green900"> 15 minute read </span>
+                </p>
+                <div class="mb-4 sm:mb-5 text-link text-green600">
+                    <p>What exactly are inline functions in C++, and when should they be utilized? This article unpacks the intricacies of inline functions, shedding light on their advantages, appropriate usage, and potential drawbacks.</p>
+                </div>
+            </article>
+        </section>
+        <section class="mx-auto max-w-5xl font-gt font-normal text-gray-700 text-link">
+            <h2 class="text-h3 font-bold mb-4">Inline Functions</h2>
+            <p class="mb-4">
+                In C++, an <strong>inline function</strong> is a function for which the compiler attempts to generate inline code. 
+                This means that instead of making a regular function call, the compiler replaces the function call with the actual code of the function. 
+                It is used primarily to reduce the <strong>function call overhead</strong> and improve performance, especially for small, frequently called functions.
+            </p>
+            <p class="mb-4">
+                The <strong>function call overhead</strong> is basically the steps that are taken when a function is called. Here is a breakdown:
+            </p>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+                <li>The arguments of the function are evaluated and placed either in registers or on the stack.</li>
+                <li>The current execution point (Instruction Pointer - IP) is saved so the program knows where to return to after the function execution is complete.</li>
+                <li>The control is transferred to the called function, which involves a jump in the instruction sequence.</li>
+                <li>A new stack frame is created for the called function. The stack frame contains space for the local variable, the return address, and saved register values that need to be restored after the function returns.</li>
+                <li>The function's code is executed with its local variables and arguments.</li>
+                <li>After the function finishes execution, its stack frame is torn down, local variables are cleaned up, and saved registers are restored.</li>
+                <li>The return value of the function (if any) is placed in the appropriate location (register or stack).</li>
+                <li>Control is transferred to the point in the program where the function was called, using the saved return address.</li>
+            </ol>
+            <p class="mb-4">
+                Inline function helps reduce this function overhead by embedding the code function directly into the caller's code. 
+                This immediately results in NO arguments passing, control transfer, or stack frame setup/teardown.
+            </p>
+            <pre class="bg-white30 p-4 rounded-3xl mb-4 overflow-auto">
+                <code class="language-cpp">
+inline return-type function-name(parameters) {
+    // Function Code
+}
+                </code>
+            </pre>
+            <!-- <figure class="mb-4">
+                <img src="inline.jpg" alt="Normal vs Inline Functions" class="rounded">
+                <figcaption class="text-center text-sm text-gray-500 mt-2">Normal vs Inline Functions</figcaption>
+            </figure> -->
+            <p class="mb-4">
+                <strong>It's important to note that:</strong> inlining is only a request to the compiler, not a command. The compiler can ignore the request for inlining.
+            </p>
+            <p class="mb-4">
+                <strong>The compiler may ignore inlining according to the following cases:</strong>
+            </p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+                <li>If the function is recursive.</li>
+                <li>If the function contains loops (for, while, or do-while).</li>
+                <li>If the function contains static variables.</li>
+                <li>If the function contains loop or go-to statements.</li>
+                <li>If the function does NOT have a return statement. (Of course, this doesn't apply for void functions since they don't need a return statement).</li>
+            </ul>
+            <p class="mb-4">
+                <strong>There are some setbacks that may result from inlining a function. Here's some:</strong>
+            </p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+                <li>Using too much inlining can result in increasing the size of the binary executable file because of the duplication of the same code.</li>
+                <li>Using too much inlining can reduce the instruction cache hit rate, resulting in reducing the speed of the instruction fetch from that of the cache memory to that of primary memory.</li>
+                <li>Inlining may increase compile time overhead if the code of the function changes since all the calling locations have to be recompiled again or, otherwise, will continue with the old functionality.</li>
+                <li>Inlining may cause memory thrashing because it increases the size of the binary executable file. Thrashing causes the performance of the computer to degrade.</li>
+            </ul>
+            <p class="mb-4">
+                <em>*All the functions inside <strong>the class</strong> are implicitly inline. Therefore, all the restrictions of inline functions are also applied here. 
+                In case you want to explicitly declare an inline function inside the class, declare the function inside the class and define it outside the class using the <strong>inline</strong> keyword.</em>
+            </p>
+            <pre class="bg-white30 p-4 rounded-3xl mb-4 overflow-auto">
+                <code class="language-cpp">
+class Sample {
+public:
+    inline int squar(int N) {
+        return N * N;
+    }
+};
+                </code>
+            </pre>
+            <p class="mb-4">
+                As always, it's essential to consider whether inlining is appropriate for the specific function and the impact it may have on your code's performance and size.
+            </p>
+        </section>
+        <footer class="font-gt text-green600 mt-14 xl:mt-20 pt-8 text-link sm:pt-10 text-center border-t-[1px] border-green600 mx-auto max-w-5xl"> &copy; 2024 Usama Elareeny. All rights reserved. </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>
