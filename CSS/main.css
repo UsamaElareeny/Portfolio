@@ -1142,7 +1142,7 @@ video {
 @font-face {
   font-family: 'acorn';
 
-  src: url('/Font/acorn.woff') format('woff');
+  src: url('../Font/acorn.woff') format('woff');
 
   font-weight: normal;
 
@@ -1152,7 +1152,7 @@ video {
 @font-face {
   font-family: 'gt';
 
-  src: url('/Font/gt.woff') format('woff');
+  src: url('../Font/gt.woff') format('woff');
 
   font-weight: normal;
 
